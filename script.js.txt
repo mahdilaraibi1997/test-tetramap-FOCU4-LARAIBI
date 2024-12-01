@@ -1,0 +1,13 @@
+document.getElementById("tetramap-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    // Exemple de logique pour afficher un résultat
+    const form = new FormData(e.target);
+    let scores = { Terre: 0, Eau: 0, Air: 0, Feu: 0 };
+    
+    for (let [question, answer] of form.entries()) {
+        scores[answer]++;
+    }
+
+    let dominant = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+    alert(`Votre profil dominant est : ${dominant}`);
+});

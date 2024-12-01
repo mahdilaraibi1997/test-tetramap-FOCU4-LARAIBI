@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test TetraMap - Focus4Communications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Test TetraMap</h1>
+        <p>Découvrez votre profil de personnalité</p>
+    </header>
+    <main>
+        <section id="test">
+            <!-- Questions du test -->
+            <form id="tetramap-form">
+                <div class="question">
+                    <p>1. Quel élément dirait ça ?</p>
+                    <p>"Je vais distribuer les chiffres mensuels du groupe..."</p>
+                    <input type="radio" name="q1" value="Terre"> Terre<br>
+                    <input type="radio" name="q1" value="Eau"> Eau<br>
+                    <input type="radio" name="q1" value="Air"> Air<br>
+                    <input type="radio" name="q1" value="Feu"> Feu<br>
+                </div>
+                <!-- Ajouter plus de questions -->
+                <button type="submit">Voir les résultats</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Focus4Communications</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
